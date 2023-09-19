@@ -10,6 +10,8 @@
         flex-direction: column;
         gap: 1.6rem;
 
+        animation: fadeIn 3s;
+
         @media only screen and (max-width: 69.375em) {
             text-align: center;
             margin-top: 8.2rem;
@@ -37,14 +39,17 @@
         
         &-reviews {
             padding-right: 7.9rem;
+            animation: moveInLeft 1s ease-in;
         }
 
         &-guru {
             transform: translateX(10%);
+            animation: moveInLeft 1.8s ease-in;
         }
 
         &-besttech {
             transform: translateX(20%);
+            animation: moveInLeft 2s ease-in;
         }
 
         @media only screen and (max-width: 69.375em) {
@@ -72,6 +77,18 @@
     img {
         max-width: 4rem;
         border-radius: 50%;
+    }
+
+    &__card-1 {
+        animation: moveInTop 1s ease-in;
+    }
+
+    &__card-2 {
+        animation: moveInTop 1.7s ease-in;
+    }
+
+    &__card-3 {
+        animation: moveInTop 2s ease-in;
     }
 
     @media only screen and (max-width: 69.375em) {

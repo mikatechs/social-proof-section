@@ -139,7 +139,8 @@ body {
   .top__heading-container {
     display: flex;
     flex-direction: column;
-    gap: 1.6rem; }
+    gap: 1.6rem;
+    animation: fadeIn 3s; }
     @media only screen and (max-width: 69.375em) {
       .top__heading-container {
         text-align: center;
@@ -158,11 +159,14 @@ body {
     flex-direction: column;
     gap: 1.6rem; }
     .top__ratings-reviews {
-      padding-right: 7.9rem; }
+      padding-right: 7.9rem;
+      animation: moveInLeft 1s ease-in; }
     .top__ratings-guru {
-      transform: translateX(10%); }
+      transform: translateX(10%);
+      animation: moveInLeft 1.8s ease-in; }
     .top__ratings-besttech {
-      transform: translateX(20%); }
+      transform: translateX(20%);
+      animation: moveInLeft 2s ease-in; }
     @media only screen and (max-width: 69.375em) {
       .top__ratings-guru, .top__ratings-besttech {
         transform: translate(0); }
@@ -180,6 +184,12 @@ body {
   .testimonial img {
     max-width: 4rem;
     border-radius: 50%; }
+  .testimonial__card-1 {
+    animation: moveInTop 1s ease-in; }
+  .testimonial__card-2 {
+    animation: moveInTop 1.7s ease-in; }
+  .testimonial__card-3 {
+    animation: moveInTop 2s ease-in; }
   @media only screen and (max-width: 69.375em) {
     .testimonial {
       place-content: center; } }
@@ -229,3 +239,23 @@ body {
     transform: translateY(1.6rem); }
   .testimonial__card-3 {
     transform: translateY(3.2rem); }
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(20rem); }
+  100% {
+    opacity: 1; } }
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem); }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
