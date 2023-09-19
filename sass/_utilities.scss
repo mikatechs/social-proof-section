@@ -1,0 +1,55 @@
+.stars {
+    display: flex;
+    gap: 0.5rem;
+    height: 1.5773rem;
+}
+
+.ratings-box {
+    display: flex;
+    column-gap: 3.24rem;
+    flex-direction: row-reverse;
+    background-color: #F7F2F7;
+    max-width: 44.5rem;
+    min-height: 5.6rem;
+    align-items: center;
+    border-radius: 0.8rem;
+    justify-content: flex-end;
+    padding-left: 3.2rem;
+
+    @media only screen and (max-width: 69.375em) {
+        width: 32.7rem;
+        min-height: 7.8rem;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-left: 0;
+        justify-content: center;
+        gap: 1.52rem;
+    }
+}
+
+.testimonial__card {
+    max-width: 35rem;
+    min-height: 23.4rem;
+    border-radius: 0.8rem;
+    background-color: $color-primary-magneta;
+    color: $color-white;
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+
+    &-top {
+        display: flex;
+        gap: 2.3rem;
+        padding-top: 4rem;
+        padding-left: 3.2rem;
+        align-items: center;
+    }
+
+    &-2 {
+        transform: translateY(1.6rem);
+    }
+
+    &-3 {
+        transform: translateY(3.2rem);
+    }
+}

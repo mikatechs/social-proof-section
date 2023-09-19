@@ -1,0 +1,50 @@
+.heading-1 {
+    color: $color-primary-magneta;
+    font-size: 5.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.8rem; /* 85.714% */
+    letter-spacing: -0.2rem;
+}
+
+.top__paragraph-text {
+    color: $color-neutral-dark;
+    font-size: 1.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.5rem; /* 131.579% */
+    letter-spacing: -0.0633rem;
+}
+
+.top__ratings-text {
+    color: $color-primary-magneta;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.testimonial__paragraph {
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.2rem; /* 129.412% */
+    letter-spacing: -0.0304rem;
+    max-width: 28.6rem;
+    align-self: center;
+}
+
+.testimonial__name {
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.testimonial__status {
+    color: $color-primary-pink;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
